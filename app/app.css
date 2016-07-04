@@ -17,8 +17,7 @@ body {
     margin-bottom: 2em;
     padding: 0 0 0.5em;
 }
-
-.tabs-container {
+.tabs-container{
     width: 100%;
 }
 
@@ -50,44 +49,43 @@ body {
 .tumbler-image:hover {
     padding: 2px;
 }
-
-.info-container-page2 {
+.info-container-page2{
     max-width: 512px;
     margin: 0 auto;
 }
 
-.user-avater:hover {
-    border: 2px solid black;
+.user-avater{
+    border: 1px solid white;
 }
-
-.blog-name {
+.user-avater:hover {
+    border: 1px solid black;
+}
+.blog-name{
     font-weight: bold;
     font-size: large;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-
-.project-title {
+.project-title{
     text-align: center;
 }
 
-.page2-view {
+.page2-view{
     width: 100%;
 }
-
-.text-container-page-2 {
+.text-container-page-2{
     margin: 0 auto;
-    width: 256px;
+    width:256px;
 }
 
-.post-name-and-url {
+.post-title{
     margin: 5px 0px;
     text-overflow: ellipsis;
     /* Required for text-overflow to do anything */
     white-space: nowrap;
     overflow: hidden;
 }
-
-.blog-info-container {
+.post-info{
     text-align: center;
     margin: 10px 0px;
+
 }

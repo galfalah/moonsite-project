@@ -2,14 +2,12 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 }
-
 .menu {
     position: relative;
     list-style: none;
@@ -20,44 +18,42 @@ body {
 .tabs-container{
     width: 100%;
 }
-
 .menu > li {
     width: 100px;
     display: inline;
     margin: 5px 0px;
 }
-
 .menu > li:before {
     padding-right: 0.3em;
 }
-
 .menu > li:nth-child(1):before {
     content: "";
     padding: 0;
 }
 
+/*images page*/
 .tumbler-image-container {
     padding-bottom: 20px;
 }
-
 .tumbler-image {
     height: 300px;
     width: 100%;
     object-fit: cover;
 }
-
 .tumbler-image:hover {
     padding: 2px;
 }
-.info-container-page2{
+
+
+/*blog info page*/
+.blog-info-content{
     max-width: 512px;
     margin: 0 auto;
 }
-
-.user-avater{
+.user-avatar{
     border: 1px solid white;
 }
-.user-avater:hover {
+.user-avatar:hover {
     border: 1px solid black;
 }
 .blog-name{
@@ -68,23 +64,21 @@ body {
 .project-title{
     text-align: center;
 }
-
-.page2-view{
+.blog-info-view{
     width: 100%;
 }
-.text-container-page-2{
+.blog-info-data{
     margin: 0 auto;
     width:256px;
 }
-
-.post-title{
+.blog-posts-titles{
     margin: 5px 0px;
     text-overflow: ellipsis;
     /* Required for text-overflow to do anything */
     white-space: nowrap;
     overflow: hidden;
 }
-.post-info{
+.blog-info-data-summery{
     text-align: center;
     margin: 10px 0px;
 

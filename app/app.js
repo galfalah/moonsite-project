@@ -4,8 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'myApp.tumblerController',
-  'myApp.tumblerController2',
-  'myApp.version'
+  'myApp.tumblerController2'
 ]).
 config(['$locationProvider', '$routeProvider', '$httpProvider', function($locationProvider, $routeProvider, $httpProvider) {
   $locationProvider.hashPrefix('!');

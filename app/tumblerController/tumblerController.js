@@ -14,25 +14,33 @@ angular.module('myApp.tumblerController', ['ngRoute'])
 
     .controller('tumblerController', ['$scope', '$http', function ($scope, $http) {
         $scope.images = [];
-        $scope.isImagesLoaded = false;
+
+        //HTTP get images from tumbler
         function getImg() {
             $http({
                 method: 'GET',
                 url: 'http://api.tumblr.com/v2/blog/passport-life.tumblr.com/posts/photo?api_key=SOiMe7M47zoEcQYKtnuzjO6Kcq2M1dAZESAQ9ipStoqvpMMYpT&notes_info=true'
             }).then(whenSuccess, whenError);
         }
+
+        //add function to scope
         $scope.loadImges = getImg;
+
+        //function  to run when http request success
         function whenSuccess(response) {
+           //for each post take all photos and push to scope images array
             response.data.response.posts.forEach(function (post) {
                 post.photos.forEach(function (photo) {
                     $scope.images.push(photo);
                 });
             });
-            $scope.isImagesLoaded = true;
+
         }
 
+        // function to run in case http request failed
         function whenError(error) {
             alert(error);
         }
+        // run get images fun, this load images to HTML
         getImg();
     }]);

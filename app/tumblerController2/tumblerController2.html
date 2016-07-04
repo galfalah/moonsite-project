@@ -1,14 +1,15 @@
 <div class="page2-view">
-    <div class="info-container-page2">
+    <div class="container-page2">
+        <!--Avatar image-->
         <img class="img-circle user-avater" ng-src="https://65.media.tumblr.com/avatar_a3e3feb69d45_512.png">
         <div class="text-container-page-2">
-            <div class="post-info">
+            <div class="blog-info-container">
                 <a target=_blank href="{{blogUrl}}">Open Blog</a>
                 <div>Total Posts:
-                    <div>{{blogPosts}}</div>
+                    <div>{{TotalNumOfBlogPosts}}</div>
                 </div>
             </div>
-            <div class="post-title" ng-repeat="post in userPosts">
+            <div class="post-name-and-url" ng-repeat="post in userPosts">
                 <a class="links" target="_blank" href="{{post.url}}">{{post.title}}</a>
             </div>
         </div>
